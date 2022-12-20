@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scam-Checker</title>
+
+    <link rel="stylesheet" href="./static/css/global.css">
+    <link rel="stylesheet" href="./static/css/navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+</head>
+<body>
+<div class="navbar">
+    <a href="#" class="name">Scam-Checker</a>
+    <div class="right-navbar">
+        <a class="active" href="#">Start</a>
+    </div>
+</div>
+<div id="start">
+    <div id="title-container">
+        <h1 id="title">Dank unserem <br> Tool <strong>sicherer</strong> im Netz unterwegs</h1>
+    </div>
+
+    <p>
+        Wir überprüfen deine Website, ob du dieser vertrauen kannst oder nicht. <br>
+        <strong>Wichtig ist:</strong> dass auch eine Website, die hier maximale Werte erreicht, nicht 100% sicher ist!
+    </p>
+
+    <a href="#checker">
+        <button class="submit-button"> Website überprüfen</button>
+    </a>
+</div>
+<br>
+
+<div id="checker">
+    <br>
+    <h1>Scam-Checker</h1>
+
+    <h3 id="error-message" class="hidden">Das ist keine valide URL!</h3>
+    <input id="url-input" type="text" placeholder="https://www.scam.com"> <br>
+    <button id="submit-url" class="submit-button"> Absenden</button>
+
+    <div class="hidden" id="current-check">
+        <h2>Aktuelle Überprüfung:</h2>
+
+        <h2 id="safe-search" class="load-icon">
+            Google Safe-Search
+        </h2>
+
+        <h2 id="phishing" class="wait-icon">
+            Phishing
+        </h2>
+
+        <h2 id="dns" class="wait-icon">
+            DNS-Einträge
+        </h2>
+
+        <div id="progress">
+            <div style="width: 0" id="progress-bar"></div>
+        </div>
+
+        <div id="score"></div>
+
+        <button id="new-request" class="submit-button hidden"> Nächste Suche</button>
+
+        <br>
+        <br>
+
+        <h3 id="rating"></h3>
+    </div>
+
+    <h2>Wie es funktioniert</h2>
+    <p>
+        Du gibst die URL in das obenstehende Feld ein und drückst Absenden. <br>
+        Unser Server führt dann verschiedene Überprüfungen durch, um dir zu helfen, Scam-Websites zu enttarnen.
+    </p>
+</div>
+</body>
+<script src="./static/js/api.js"></script>
+<script src="./static/js/home.js"></script>
+</html>
