@@ -2,7 +2,7 @@
 
 Scam-Checker benutzt verschiedene Wege Scamming, Pishing, Social Engineering und Viren zu erkennen und dich davor zu
 warnen. Die Website kann 0-100 Punkte erreichen. 100 Punkte ist das beste und wird von uns somit nicht als gefährlich
-erkannt.
+erkannt. Dies ist das Schul Informatik Projekt von Dominic und Leo
 
 ## Phishing Database
 
