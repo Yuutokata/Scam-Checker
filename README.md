@@ -1,24 +1,32 @@
-# Willkommen zum Scam-Checker Backend
 
-Scam-Checker benutzt verschiedene Wege Scamming, Pishing, Social Engineering und Viren zu erkennen und dich davor zu
-warnen. Die Website kann 0-100 Punkte erreichen. 100 Punkte ist das beste und wird von uns somit nicht als gefährlich
-erkannt. Dies ist das Schul Informatik Projekt von Dominic und Leo
+# Scam-Checker
 
-## Phishing Database
+This project is a school computer science project by Dominic and Leo. It aims to detect and warn users about potential online scams, phishing attacks, social engineering attempts, and viruses.
 
-Wir benutzten eine Database mit circa 75000 Domains, die Phishing sind, um mögliche Phishing Websites zu identifizieren.
-Diese Database wurde von [Leo](https://github.com/Yuutokata/Pishing-Database) erstellt, sie ist gratis und kann von
-jedem benutzt werden.
+## How it Works
 
-## Google SafeBrowsing API
+Scam-Checker utilizes various methods to analyze websites and determine their safety:
 
-Wir benutzen ebenfalls eine API von Google, die Malware, Social Engineering, möglich gefährliche Websites und
-ungewünschte Software erkennen.
+### 1. Phishing Database
 
-URLs zum Testen finden sie [hier](https://testsafebrowsing.appspot.com/)
+A database of approximately 75,000 known phishing domains is used to identify potentially harmful websites. This database is free to use and was created by Leo. You can find it here: [https://github.com/Yuutokata/Phishing-Database](https://github.com/Yuutokata/Phishing-Database)
 
-## PyFunceble
+### 2. Google SafeBrowsing API
 
-Wir benutzen die Library PyFunceble, die ein DNS Lookup und die WHOIS Records überprüft. Da dies nicht unsere eigene
-Library ist können wir leider keine URLs zum Testen vorlegen.
-PyFunceble ist aber eine sehr bekannte und verlässliche Library, um dies zu überprüfen.
+The project integrates with Google's SafeBrowsing API to detect malware, social engineering tactics, potentially dangerous websites, and unwanted software. For testing purposes, you can find URLs here: [https://testsafebrowsing.appspot.com/](https://testsafebrowsing.appspot.com/)
+
+### 3. PyFunceble
+
+The PyFunceble library is used to perform DNS lookups and check WHOIS records, providing additional information about website ownership and legitimacy. While we cannot provide specific URLs for testing this component, PyFunceble is a widely recognized and reliable library for these checks.
+
+## Scoring System
+
+Scam-Checker employs a scoring system from 0 to 100 to evaluate website safety. A score of 100 indicates the best rating, meaning the website is likely safe. Lower scores suggest potential risks, with 0 being the most dangerous.
+
+## Educational Purpose
+
+This project is primarily for educational purposes and is not intended for official or commercial use. It serves as a learning tool for understanding and implementing various scam detection techniques.
+
+## Disclaimer
+
+While Scam-Checker strives to provide accurate and reliable results, it cannot guarantee 100% accuracy in identifying all online threats. Users should always exercise caution and critical thinking when interacting with websites or online services.
